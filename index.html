@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather APP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        div.weather-form {
+            background: #323131;
+        }
+
+        div.weather-card {
+            background-color: #eee !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weather-form py-5 ">
+        <div class="w-50 m-auto">
+            <div class="card weather-card">
+
+                <div class="card-body">
+                    <h3 class="card-title">Get Your City Weather Info</h3>
+                    <p class="card-text">
+                    <div class="form-group">
+                        <strong><label for="city">Enter City</label></strong>
+                        <input required type="text" class="form-control" id="city">
+                    </div>
+
+                    </p>
+                    <input type="button" onclick="get_weather_info()" class="btn btn-primary" value="Submit">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div id="api-response">
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="weather.js"></script>
+</body>
+
+</html>
